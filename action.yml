@@ -1,0 +1,24 @@
+name: "GitHub Action: Simple Release"
+description: "Github Action for creating a simple Github Releases"
+author: "Nicholas Valentinus"
+branding:
+  icon: tag
+  color: blue
+  # color: lightblue
+
+inputs:
+  tag:
+    description: "The release tag (also release title)"
+    required: true
+  desc:
+    description: "The release description"
+    required: true
+
+runs:
+  using: 'composite'
+  steps:      
+    - run: $GITHUB_ACTION_PATH/main.sh
+      shell: bash
+      env:
+        INPUT_TAG: ${{ inputs.tag }}
+        INPUT_DESC: ${{ inputs.desc }}
