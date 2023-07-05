@@ -1,5 +1,5 @@
 name: "GitHub Action: Simple Release"
-description: "Github Action for creating simple Github Releases"
+description: "GitHub Action for creating simple GitHub Releases"
 author: "Nicholas Valentinus"
 branding:
   icon: package
@@ -7,10 +7,10 @@ branding:
 
 inputs:
   tag:
-    description: "The release tag (also release title)"
+    description: "Release tag (also title)"
     required: true
   desc:
-    description: "The release description"
+    description: "Release description"
     required: true
 
 runs:
