@@ -1,5 +1,5 @@
 name: "GitHub Action: Simple Release"
-description: "Github Action for creating a simple Github Releases"
+description: "Github Action for creating simple Github Releases"
 author: "Nicholas Valentinus"
 branding:
   icon: tag
