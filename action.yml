@@ -3,7 +3,7 @@ description: "Github Action for creating simple Github Releases"
 author: "Nicholas Valentinus"
 branding:
   icon: package
-  color: lightblue
+  color: gray-dark
 
 inputs:
   tag:
