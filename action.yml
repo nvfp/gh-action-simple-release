@@ -2,9 +2,8 @@ name: "GitHub Action: Simple Release"
 description: "Github Action for creating simple Github Releases"
 author: "Nicholas Valentinus"
 branding:
-  icon: tag
-  color: blue
-  # color: lightblue
+  icon: package
+  color: lightblue
 
 inputs:
   tag:
