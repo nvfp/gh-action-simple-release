@@ -16,8 +16,10 @@ inputs:
 runs:
   using: 'composite'
   steps:      
-    - run: $GITHUB_ACTION_PATH/main.sh
-      shell: bash
+    - shell: bash
       env:
         INPUT_TAG: ${{ inputs.tag }}
         INPUT_DESC: ${{ inputs.desc }}
+      run: |
+        chmod +x $GITHUB_ACTION_PATH/main.sh
+        $GITHUB_ACTION_PATH/main.sh
