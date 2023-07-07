@@ -1,5 +1,7 @@
 # GitHub Action: Simple Release
 
+Create a release, just specify TAG and DESCRIPTION.
+
 
 ## Usage
 
@@ -12,7 +14,7 @@ on:
       - main
 
 jobs:
-  my-job:
+  release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -29,6 +31,8 @@ jobs:
           tag: X.X.X
           desc: Foo bar baz
 ```
+
+> Note: Change the last two lines (`tag` and `desc` values)
 
 
 ## License
