@@ -32,7 +32,7 @@ jobs:
           desc: Foo bar baz
 ```
 
-> Note: Change the last two lines (`tag` and `desc` values)
+> **📌Note:** Change the last two lines (`tag` and `desc` values)
 
 
 ## License
