@@ -9,9 +9,7 @@ Create a release, just specify TAG and DESCRIPTION.
 name: Simple release
 
 on:
-  push:
-    branches:
-      - main
+  # Specify your trigger
 
 jobs:
   release:
