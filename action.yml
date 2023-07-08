@@ -18,8 +18,8 @@ runs:
   steps:      
     - shell: bash
       env:
-        INPUT_TAG: '${{ inputs.tag }}'
-        INPUT_DESC: '${{ inputs.desc }}'
+        INPUT_TAG: ${{ inputs.tag }}
+        INPUT_DESC: ${{ inputs.desc }}
       run: |
         chmod +x $GITHUB_ACTION_PATH/main.sh
         $GITHUB_ACTION_PATH/main.sh
