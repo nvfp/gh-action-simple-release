@@ -8,7 +8,7 @@ if [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+\.[0-9]+$")" ]; then
 elif [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+\.[0-9]+b[0-9]*$")" ]; then
     status="prerelease"
 else
-    echo "DEBUG: Invalid tag: $INPUT_TAG"
+    echo "ERROR: Invalid tag: $INPUT_TAG"
     exit 1
 fi
 echo "INFO: status: '$status'"
