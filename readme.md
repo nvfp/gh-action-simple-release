@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Release
-        uses: nvfp/gh-action-simple-release@1.4.0
+        uses: nvfp/gh-action-simple-release@1.9.0
         env:
           GH_TOKEN: ${{ github.token }}
         with:
