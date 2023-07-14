@@ -5,7 +5,7 @@ echo "INFO: INPUT_DESC: '$INPUT_DESC'"
 # Check
 if [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+\.[0-9]+$")" ]; then
     status="latest"
-elif [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+[0-9]+b[0-9]*$")" ]; then
+elif [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+\.[0-9]+b[0-9]*$")" ]; then
     status="prerelease"
 else
     echo "DEBUG: Invalid tag: $INPUT_TAG"
