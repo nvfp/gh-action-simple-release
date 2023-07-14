@@ -5,18 +5,17 @@ echo "INFO: INPUT_DESC: '$INPUT_DESC'"
 # Check
 if [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+\.[0-9]+$")" ]; then
     status="latest"
-    echo "INFO: status: latest."
 elif [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+[0-9]+b[0-9]*$")" ]; then
     status="prerelease"
-    echo "INFO: status: prerelease."
 else
     echo "DEBUG: Invalid tag: $INPUT_TAG"
     exit 1
 fi
+echo "INFO: status: '$status'"
 
 # Release
-if [ "$status" == "latest" ]; then
+if [ "$status" = "latest" ]; then
     gh release create "$INPUT_TAG" --title "$INPUT_TAG" --notes "$INPUT_DESC"
-elif [ "$status" == "prerelease" ]; then
+elif [ "$status" = "prerelease" ]; then
     gh release create "$INPUT_TAG" --title "$INPUT_TAG" --notes "$INPUT_DESC" --prerelease
 fi
