@@ -7,7 +7,7 @@ For a simple release that just needs to specify a *tag* and a *description*.
 
 Required:
 
-1. `tag`: First, make sure your repo doesn't already have the `tag` you intend to use. When you set the `tag` in the format of `X.X.X` (e.g., `1.2.3`), this workflow will generate the **latest** GitHub release with title `tag` and also create a corresponding Git tag `tag` for your repository. If you specify a **prerelease** tag in the format of `X.X.Xb(X)`, such as `1.2.3b` or `1.2.3b1`, it will mark the Release as a prerelease.
+1. `tag`: First, make sure your repo doesn't already have the `tag` you intend to use. When you set the `tag` in the format of `X.X.X` (e.g., `1.2.3`), this workflow will generate the ***latest*** GitHub release with title `tag` and also create a corresponding Git tag `tag` for your repository. If you specify a ***prerelease*** tag in the format of `X.X.Xb(X)`, such as `1.2.3b` or `1.2.3b1`, it will mark the Release as a prerelease.
 2. `desc`: The GitHub Release description.
 
 Example:
