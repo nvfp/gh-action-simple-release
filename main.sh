@@ -3,10 +3,10 @@ echo "INFO: INPUT_TAG : '$INPUT_TAG'"
 echo "INFO: INPUT_DESC: '$INPUT_DESC'"
 
 # Check
-if [[ $INPUT_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+if [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+\.[0-9]+$")" ]; then
     status="latest"
     echo "INFO: status: latest."
-elif [[ $INPUT_TAG =~ ^[0-9]+\.[0-9]+[0-9]+b[0-9]*$ ]]; then
+elif [ "$(echo "$INPUT_TAG" | grep -E "^[0-9]+\.[0-9]+[0-9]+b[0-9]*$")" ]; then
     status="prerelease"
     echo "INFO: status: prerelease."
 else

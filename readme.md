@@ -29,15 +29,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Release
-        uses: nvfp/gh-action-simple-release@1.9.0
+        uses: nvfp/gh-action-simple-release@1.10.0
         env:
           GH_TOKEN: ${{ github.token }}
         with:
           tag: X.X.Xb(X)
           desc: Foo bar baz
 ```
-
-> **📌Note:** Change the last two lines (`tag` and `desc` values)
 
 
 ## License
